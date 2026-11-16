@@ -3,259 +3,48 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Leyn Drippy — Aksesuar</title>
-<meta name="description" content="Chrome Hearts, Arc'teryx ve Vivienne Westwood aksesuar. Bere, gözlük, küpe, yüzük, bileklik, kolye. 1.450 TL üzeri kargo bedava.">
-<style>
-  :root{--bg:#f4f2ee;--card:#ffffff;--tx:#111111;--mu:#7a7772;--ln:#e2ded7;--ac:#111111}
-  *{margin:0;padding:0;box-sizing:border-box}
-  body{background:var(--bg);color:var(--tx);font-family:'Helvetica Neue',Arial,sans-serif;-webkit-font-smoothing:antialiased}
-  a{color:inherit;text-decoration:none}
-  .demo{background:#111;color:#fff;text-align:center;font-size:11px;font-weight:600;letter-spacing:1.2px;padding:7px}
-  header{position:sticky;top:0;z-index:50;background:rgba(244,242,238,.94);backdrop-filter:blur(10px);border-bottom:1px solid var(--ln)}
-  .nav{max-width:1180px;margin:0 auto;padding:16px 20px;display:flex;align-items:center;justify-content:space-between;gap:16px}
-  .logo{font-size:17px;font-weight:700;letter-spacing:-.4px}
-  .logo i{font-style:normal;color:#a8a49c}
-  .menu{display:flex;gap:20px;font-size:11.5px;color:var(--mu);letter-spacing:.5px}
-  .menu a:hover{color:var(--tx)}
-  .ship{font-size:11px;color:var(--mu);border:1px solid var(--ln);padding:8px 12px;border-radius:20px;white-space:nowrap}
-  .hero{max-width:1180px;margin:0 auto;padding:52px 20px 40px;display:grid;grid-template-columns:1.1fr .9fr;gap:40px;align-items:center}
-  .hero h1{font-size:clamp(30px,4.6vw,50px);line-height:1.02;letter-spacing:-1.8px;font-weight:700}
-  .hero p{color:var(--mu);font-size:13.5px;line-height:1.7;margin-top:16px;max-width:400px}
-  .hero-img{aspect-ratio:4/3;border-radius:10px;overflow:hidden;background:#e6e2db}
-  .hero-img img{width:100%;height:100%;object-fit:cover}
-  .strip{display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid var(--ln);border-bottom:1px solid var(--ln);max-width:1180px;margin:0 auto}
-  .strip div{padding:14px 8px;text-align:center;font-size:11px;color:var(--mu);border-right:1px solid var(--ln)}
-  .strip div:last-child{border:0}
-  .wrap{max-width:1180px;margin:0 auto;padding:38px 20px 0}
-  .bar{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap;margin-bottom:18px}
-  .bar h2{font-size:13px;letter-spacing:1.8px;font-weight:700}
-  .bar span{font-size:11.5px;color:var(--mu)}
-  .chips{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:22px}
-  .chip{border:1px solid var(--ln);background:none;color:var(--mu);font-size:11px;padding:7px 14px;border-radius:20px;cursor:pointer;font-family:inherit}
-  .chip.on{background:#111;color:#fff;border-color:#111;font-weight:600}
-  .grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
-  .card{background:var(--card);border:1px solid var(--ln);border-radius:10px;overflow:hidden;display:flex;flex-direction:column}
-  .thumb{position:relative;aspect-ratio:1;background:#ece8e1;overflow:hidden}
-  .thumb img{width:100%;height:100%;object-fit:cover;transition:transform .4s}
-  .card:hover .thumb img{transform:scale(1.05)}
-  .tag{position:absolute;top:9px;left:9px;font-size:9px;font-weight:800;letter-spacing:.4px;padding:3px 7px;border-radius:3px}
-  .tag.d{background:#111;color:#fff}
-  .tag.s{background:#fff;color:#111;border:1px solid #111}
-  .tag.x{background:#c9c4bb;color:#4a4741}
-  .cbody{padding:11px 12px 12px;display:flex;flex-direction:column;flex:1}
-  .cname{font-size:11.5px;line-height:1.35;min-height:31px}
-  .cprice{font-size:12px;margin-top:7px;color:var(--mu)}
-  .cprice s{margin-right:5px}
-  .cprice b{color:var(--tx);font-weight:700}
-  .buy{margin-top:10px;display:block;text-align:center;background:#111;color:#fff;font-size:11px;font-weight:600;padding:9px;border-radius:5px}
-  .buy:hover{background:#2c2c2c}
-  .buy.off{background:#dcd8d0;color:#7a7772}
-  .band{margin:40px 0;background:#111;color:#fff;border-radius:10px;padding:26px 24px;display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap}
-  .band h3{font-size:15px;margin-bottom:6px}
-  .band p{font-size:12px;color:#b3b0aa;line-height:1.6;max-width:430px}
-  .band a{background:#fff;color:#111;font-size:11.5px;font-weight:700;padding:11px 18px;border-radius:5px;white-space:nowrap}
-  footer{border-top:1px solid var(--ln);margin-top:36px;padding:32px 0 0}
-  .fcols{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;font-size:11.5px;color:var(--mu);line-height:2;max-width:1180px;margin:0 auto;padding:0 20px}
-  .fcols h4{color:var(--tx);font-size:10px;letter-spacing:1.6px;margin-bottom:8px}
-  .fbot{max-width:1180px;margin:24px auto 0;padding:14px 20px;border-top:1px solid var(--ln);display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;font-size:10.5px;color:#96928b}
-  @media(max-width:860px){.grid{grid-template-columns:repeat(2,1fr)}.menu{display:none}.hero{grid-template-columns:1fr;gap:24px;padding-top:34px}.strip{grid-template-columns:repeat(2,1fr)}.strip div:nth-child(2){border-right:0}.fcols{grid-template-columns:repeat(2,1fr)}}
-</style>
+<title>leyn drippy — Chrome Hearts, Arc'teryx, Vivienne Westwood aksesuar</title>
+<meta name="description" content="Bere, gözlük, küpe, yüzük, bileklik, kolye. Chrome Hearts, Arc'teryx, Vivienne Westwood, Hello Kitty. 1.450 TL üzeri kargo bedava.">
+<link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
 
-<div class="demo">ÖNİZLEME TASLAĞI — ürün fotoğrafları ve stok bilgisi örnektir</div>
+<div class="demo">ÖNİZLEME TASLAĞI — stok ve kampanya bilgisi örnektir</div>
 
 <header>
   <div class="nav">
-    <div class="logo">leyn<i>drippy</i></div>
+    <a class="logo" href="index.html">leyn<i>drippy</i></a>
+    <button class="burger">☰</button>
     <nav class="menu">
-      <a href="#grid">Bere</a><a href="#grid">Gözlük</a><a href="#grid">Küpe</a><a href="#grid">Yüzük</a><a href="#grid">Bileklik</a><a href="#grid">Kolye</a>
+      <a href="urunler.html">Yeni gelenler</a>
+      <a href="urunler.html">Bere</a>
+      <a href="urunler.html">Gözlük</a>
+      <a href="urunler.html">Küpe</a>
+      <a href="urunler.html">Yüzük</a>
+      <a href="urunler.html">Bileklik</a>
+      <a href="urunler.html">Kolye</a>
     </nav>
-    <span class="ship">1.450 TL üzeri kargo bedava</span>
+    <div class="acts">
+      <a href="olcu-rehberi.html">Ölçü rehberi</a>
+      <a class="cart" href="#">Sepet · <span id="cnt">0</span></a>
+    </div>
   </div>
 </header>
 
+<div class="topbar">1.450 TL üzeri siparişlerde kargo bedava · Trabzon'dan 1 iş günü içinde kargoda</div>
+
 <section class="hero">
-  <div>
+  <div class="hero-txt">
+    <div class="kick">SADECE LEYN · 2025'TEN BERİ</div>
     <h1>Sadece leyn.<br>Aksesuarda tek adres.</h1>
-    <p>Chrome Hearts, Arc'teryx, Vivienne Westwood, Hello Kitty. 50 parça stokta, 1.450 TL üzeri kargo bedava. Tüm siparişler Shopier güvencesiyle.</p>
-    <div style="display:flex;gap:10px;margin-top:24px;flex-wrap:wrap">
-      <a href="#grid" style="background:#111;color:#fff;font-size:12px;font-weight:700;padding:13px 22px;border-radius:5px">Tüm ürünler</a>
-      <a href="https://www.shopier.com/leyncreative" target="_blank" rel="noopener" style="border:1px solid var(--ln);color:#111;font-size:12px;padding:13px 22px;border-radius:5px">Shopier mağazası</a>
+    <p>Chrome Hearts, Arc'teryx, Vivienne Westwood, Hello Kitty. Bere, gözlük, küpe, yüzük, bileklik, kolye — hepsi tek katalogda, Shopier güvencesiyle.</p>
+    <div class="btns">
+      <a class="btn btn-p" href="urunler.html">Tüm ürünler</a>
+      <a class="btn btn-s" href="https://www.shopier.com/leyncreative" target="_blank" rel="noopener">Shopier mağazası</a>
     </div>
   </div>
-  <div class="hero-img"><img src="https://cdn11.bigcommerce.com/s-9saznil5k4/images/stencil/1280x1280/products/10207/28194/10001899__10036.1752683433.jpg?c=1" alt="Gümüş aksesuar"></div>
+  <div class="hero-img" style="background-image:url('https://cdn.shopier.app/pictures_large/leyncreative_2fea597671fa8aac687c64fa252d88c7.png')"></div>
 </section>
 
-<div class="strip">
-  <div>1.450 TL üzeri bedava kargo</div><div>Shopier güvenli ödeme</div><div>Kapıda ödeme</div><div>Instagram DM destek</div>
-</div>
-
-<div class="wrap" id="grid">
-  <div class="bar"><h2>TÜM ÜRÜNLER</h2><span>50 ürün · stokta 43</span></div>
-  <div class="chips">
-    <button class="chip on" data-f="all">Tümü</button>
-    <button class="chip" data-f="bere">Bere</button>
-    <button class="chip" data-f="gozluk">Gözlük</button>
-    <button class="chip" data-f="kupe">Küpe</button>
-    <button class="chip" data-f="yuzuk">Yüzük</button>
-    <button class="chip" data-f="bileklik">Bileklik</button>
-    <button class="chip" data-f="kolye">Kolye</button>
-  </div>
-
-  <div class="grid" id="cards">
-
-    <div class="card" data-cat="gozluk">
-      <div class="thumb"><img src="https://images.squarespace-cdn.com/content/v1/5aa7182a1aef1d773b69638c/1568647961265-OGNOW0KFJ3L3K4H7K6UF/Kevin+Norris+Photography_Eyewear_.jpg" alt="Chrome Hearts gözlük"><span class="tag d">%33</span></div>
-      <div class="cbody"><div class="cname">Chrome Hearts Premium Şeffaf Unisex Gözlük</div>
-      <div class="cprice"><s>1.499 TL</s><b>999 TL</b></div>
-      <a class="buy" href="https://www.shopier.com/leyncreative" target="_blank" rel="noopener">Shopier'den al</a></div>
-    </div>
-
-    <div class="card" data-cat="gozluk">
-      <div class="thumb"><img src="https://images.unsplash.com/photo-1511499767150-a48a237f0083?w=700&q=80" alt="Chrome Hearts siyah gözlük"><span class="tag d">%33</span></div>
-      <div class="cbody"><div class="cname">Chrome Hearts Premium Siyah Unisex Gözlük</div>
-      <div class="cprice"><s>1.499 TL</s><b>999 TL</b></div>
-      <a class="buy" href="https://www.shopier.com/leyncreative" target="_blank" rel="noopener">Shopier'den al</a></div>
-    </div>
-
-    <div class="card" data-cat="kupe">
-      <div class="thumb"><img src="https://kinraden.com/cdn/shop/files/FORTRUTHEXTRASMALLEarring-SterlingSilver-03.jpg?v=1782212423&width=800" alt="Chrome Hearts küpe"><span class="tag d">%22</span></div>
-      <div class="cbody"><div class="cname">Chrome Hearts Çift Şeffaf Unisex Küpe</div>
-      <div class="cprice"><s>899 TL</s><b>699 TL</b></div>
-      <a class="buy" href="https://www.shopier.com/leyncreative" target="_blank" rel="noopener">Shopier'den al</a></div>
-    </div>
-
-    <div class="card" data-cat="kupe">
-      <div class="thumb"><img src="https://kinraden.com/cdn/shop/files/FORTRUTHEXTRASMALLEarring-SterlingSilver-03.jpg?v=1782212423&width=800" alt="Chrome Hearts adet küpe"><span class="tag d">%22</span></div>
-      <div class="cbody"><div class="cname">Chrome Hearts Adet Siyah Unisex Küpe</div>
-      <div class="cprice"><s>450 TL</s><b>350 TL</b></div>
-      <a class="buy" href="https://www.shopier.com/leyncreative" target="_blank" rel="noopener">Shopier'den al</a></div>
-    </div>
-
-    <div class="card" data-cat="bere">
-      <div class="thumb"><img src="https://www.neweracap.com/cdn/shop/files/60973654_KNIT_CASHMERECUFFLESSKN_NONLIC_BLK_R.jpg?v=1787249151&width=800" alt="Arc'teryx bere"><span class="tag d">%44</span></div>
-      <div class="cbody"><div class="cname">Arc'teryx Premium Bere</div>
-      <div class="cprice"><s>1.599 TL</s><b>899 TL</b></div>
-      <a class="buy" href="https://www.shopier.com/leyncreative" target="_blank" rel="noopener">Shopier'den al</a></div>
-    </div>
-
-    <div class="card" data-cat="bere">
-      <div class="thumb"><img src="https://static.nike.com/a/images/f_auto,cs_srgb/w_960,c_limit/86efa1b6-b48b-4733-91a5-3ff04ad4c4b3/5-cute-outfits-with-beanies-by-nike.jpg" alt="Premium bere"><span class="tag d">%36</span></div>
-      <div class="cbody"><div class="cname">Premium Bere</div>
-      <div class="cprice"><s>1.399 TL</s><b>899 TL</b></div>
-      <a class="buy" href="https://www.shopier.com/leyncreative" target="_blank" rel="noopener">Shopier'den al</a></div>
-    </div>
-
-    <div class="card" data-cat="yuzuk">
-      <div class="thumb"><img src="http://www.happygolicky.com/cdn/shop/products/Chunky_Wide_Ring2_6c023d55-6eac-4ee9-b731-604b564f534f_grande.jpg?v=1739473249" alt="Chrome Hearts yüzük"><span class="tag d">%20</span></div>
-      <div class="cbody"><div class="cname">Chrome Hearts Unisex Ayarlanabilir Yüzük</div>
-      <div class="cprice"><s>499 TL</s><b>399 TL</b></div>
-      <a class="buy" href="https://www.shopier.com/leyncreative" target="_blank" rel="noopener">Shopier'den al</a></div>
-    </div>
-
-    <div class="card" data-cat="bileklik">
-      <div class="thumb"><img src="https://cdn11.bigcommerce.com/s-9saznil5k4/images/stencil/1280x1280/products/10207/28194/10001899__10036.1752683433.jpg?c=1" alt="Vivienne Westwood bileklik"><span class="tag d">%6</span></div>
-      <div class="cbody"><div class="cname">Vivienne Westwood Unisex Bileklik</div>
-      <div class="cprice"><s>899 TL</s><b>849 TL</b></div>
-      <a class="buy" href="https://www.shopier.com/leyncreative" target="_blank" rel="noopener">Shopier'den al</a></div>
-    </div>
-
-    <div class="card" data-cat="bileklik">
-      <div class="thumb"><img src="https://cdn11.bigcommerce.com/s-9saznil5k4/images/stencil/1280x1280/products/10207/28194/10001899__10036.1752683433.jpg?c=1" alt="Chrome Hearts bileklik"><span class="tag d">%13</span></div>
-      <div class="cbody"><div class="cname">Chrome Hearts Unisex Bileklik</div>
-      <div class="cprice"><s>799 TL</s><b>699 TL</b></div>
-      <a class="buy" href="https://www.shopier.com/leyncreative" target="_blank" rel="noopener">Shopier'den al</a></div>
-    </div>
-
-    <div class="card" data-cat="kolye">
-      <div class="thumb"><img src="https://cdn.theograce.com/digital-asset/product/forever-photo-pendant-necklace-in-sterling-silver-8.jpg" alt="Hello Kitty kolye"><span class="tag d">%11</span></div>
-      <div class="cbody"><div class="cname">Hello Kitty Chain Kolye</div>
-      <div class="cprice"><s>899 TL</s><b>799 TL</b></div>
-      <a class="buy" href="https://www.shopier.com/leyncreative" target="_blank" rel="noopener">Shopier'den al</a></div>
-    </div>
-
-    <div class="card" data-cat="bileklik">
-      <div class="thumb"><img src="https://cdn11.bigcommerce.com/s-9saznil5k4/images/stencil/1280x1280/products/10207/28194/10001899__10036.1752683433.jpg?c=1" alt="Hello Kitty bileklik"><span class="tag d">%8</span></div>
-      <div class="cbody"><div class="cname">Hello Kitty Chain Bileklik</div>
-      <div class="cprice"><s>650 TL</s><b>599 TL</b></div>
-      <a class="buy" href="https://www.shopier.com/leyncreative" target="_blank" rel="noopener">Shopier'den al</a></div>
-    </div>
-
-    <div class="card" data-cat="gozluk">
-      <div class="thumb"><img src="https://images.unsplash.com/photo-1511499767150-a48a237f0083?w=700&q=80" alt="Chrome Hearts full set"><span class="tag x">TÜKENDİ</span></div>
-      <div class="cbody"><div class="cname">Chrome Hearts Full Set Unisex Gözlük</div>
-      <div class="cprice"><s>3.500 TL</s><b>2.499 TL</b></div>
-      <a class="buy off" href="https://www.shopier.com/leyncreative" target="_blank" rel="noopener">Gelince haber ver</a></div>
-    </div>
-
-    <div class="card" data-cat="bere">
-      <div class="thumb"><img src="https://www.neweracap.com/cdn/shop/files/60973654_KNIT_CASHMERECUFFLESSKN_NONLIC_BLK_R.jpg?v=1787249151&width=800" alt="Arc'teryx bere"><span class="tag s">SON ÜRÜN</span></div>
-      <div class="cbody"><div class="cname">Arc'teryx Premium Bere — Bej</div>
-      <div class="cprice"><s>1.599 TL</s><b>1.399 TL</b></div>
-      <a class="buy" href="https://www.shopier.com/leyncreative" target="_blank" rel="noopener">Shopier'den al</a></div>
-    </div>
-
-    <div class="card" data-cat="kupe">
-      <div class="thumb"><img src="https://kinraden.com/cdn/shop/files/FORTRUTHEXTRASMALLEarring-SterlingSilver-03.jpg?v=1782212423&width=800" alt="Chrome Hearts kırmızı küpe"><span class="tag x">TÜKENDİ</span></div>
-      <div class="cbody"><div class="cname">Chrome Hearts Çift Kırmızı Unisex Küpe</div>
-      <div class="cprice"><s>899 TL</s><b>699 TL</b></div>
-      <a class="buy off" href="https://www.shopier.com/leyncreative" target="_blank" rel="noopener">Gelince haber ver</a></div>
-    </div>
-
-    <div class="card" data-cat="kupe">
-      <div class="thumb"><img src="https://kinraden.com/cdn/shop/files/FORTRUTHEXTRASMALLEarring-SterlingSilver-03.jpg?v=1782212423&width=800" alt="Chrome Hearts pembe küpe"><span class="tag x">TÜKENDİ</span></div>
-      <div class="cbody"><div class="cname">Chrome Hearts Adet Pembe Unisex Küpe</div>
-      <div class="cprice"><s>450 TL</s><b>350 TL</b></div>
-      <a class="buy off" href="https://www.shopier.com/leyncreative" target="_blank" rel="noopener">Gelince haber ver</a></div>
-    </div>
-
-    <div class="card" data-cat="bere">
-      <div class="thumb"><img src="https://static.nike.com/a/images/f_auto,cs_srgb/w_960,c_limit/86efa1b6-b48b-4733-91a5-3ff04ad4c4b3/5-cute-outfits-with-beanies-by-nike.jpg" alt="Premium bere"><span class="tag d">%43</span></div>
-      <div class="cbody"><div class="cname">Premium Bere — Antrasit</div>
-      <div class="cprice"><s>1.399 TL</s><b>799 TL</b></div>
-      <a class="buy" href="https://www.shopier.com/leyncreative" target="_blank" rel="noopener">Shopier'den al</a></div>
-    </div>
-
-    <div class="card" data-cat="kolye">
-      <div class="thumb"><img src="https://cdn.theograce.com/digital-asset/product/forever-photo-pendant-necklace-in-sterling-silver-8.jpg" alt="Hello Kitty kolye"><span class="tag x">TÜKENDİ</span></div>
-      <div class="cbody"><div class="cname">Hello Kitty Chain Kolye — Gümüş</div>
-      <div class="cprice"><s>999 TL</s><b>899 TL</b></div>
-      <a class="buy off" href="https://www.shopier.com/leyncreative" target="_blank" rel="noopener">Gelince haber ver</a></div>
-    </div>
-
-  </div>
-
-  <div class="band">
-    <div>
-      <h3>Stokta olmayan ürünler boşa gitmesin</h3>
-      <p>Ürün gelince haber ver formu: e-posta bırakan müşteri, ürün stoğa girince otomatik haber alıyor. "Tükendi" etiketi satış kaybı değil, talep listesi oluyor.</p>
-    </div>
-    <a href="https://www.shopier.com/leyncreative" target="_blank" rel="noopener">Shopier mağazası</a>
-  </div>
-</div>
-
-<footer>
-  <div class="fcols">
-    <div><h4>MAĞAZA</h4>Hakkımızda<br>Toptan<br>İletişim</div>
-    <div><h4>YARDIM</h4>Sipariş takibi<br>İade / değişim<br>Beden rehberi</div>
-    <div><h4>KURUMSAL</h4>Koşullar<br>Ön bilgilendirme formu<br>Mesafeli satış<br>KVKK</div>
-    <div><h4>TAKİP</h4>Instagram<br>WhatsApp<br>Shopier</div>
-  </div>
-  <div class="fbot"><span>© 2026 Leyn Drippy</span><span>Shopier · Visa · Mastercard · Kapıda ödeme</span></div>
-</footer>
-
-<script>
-  document.querySelectorAll('.chip').forEach(function(ch){
-    ch.onclick = function(){
-      document.querySelectorAll('.chip').forEach(function(c){c.classList.remove('on')});
-      ch.classList.add('on');
-      var f = ch.dataset.f;
-      document.querySelectorAll('.card').forEach(function(card){
-        card.style.display = (f === 'all' || card.dataset.cat === f) ? '' : 'none';
-      });
-    };
-  });
-</script>
-</body>
-</html>
+<div class="usp"><div>1 iş günü içinde kargo</div><div>Shopier güvenli ödeme</div><div>Kapıda ödeme</div><div>WhatsApp destek</div></div>
+... (devam)
